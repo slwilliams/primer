@@ -4,6 +4,8 @@ import (
 	"math"
 )
 
+// getPrime based on GoLang Playground Demo
+// https://play.golang.org/p/XXiTIpRBAu
 func getPrime(maxNumber int) *PrimeObject {
 
 	var x, y, n int
