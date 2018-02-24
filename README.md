@@ -1,4 +1,5 @@
-# primer
+# primer [![Build Status](https://travis-ci.org/mchmarny/primer.svg?branch=master)](https://travis-ci.org/mchmarny/primer)
+
 REST service calculating prime number, good for infrastructure scaling demo 
 
 ## Start
