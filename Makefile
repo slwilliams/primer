@@ -1,7 +1,7 @@
 
 # Go parameters
 DOCKER_USERNAME=mchmarny
-GCP_PROJECT_NAME=serverless-lab
+GCP_PROJECT_NAME=elafros-samples
 BINARY_NAME=primer
 
 all: test
@@ -26,7 +26,7 @@ deps:
 	godep restore
 
 gcr:
-	gcloud container builds submit --tag gcr.io/$(GCP_PROJECT_NAME)/$(BINARY_NAME):latest .
+	gcloud container builds submit --project=$(GCP_PROJECT_NAME) --tag gcr.io/$(GCP_PROJECT_NAME)/$(BINARY_NAME):latest .
 
 run-docker:
 	docker build -t $(BINARY_NAME) .
