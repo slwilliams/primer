@@ -58,6 +58,7 @@ func writeResponse(maxNum int, w http.ResponseWriter) {
 		Host:  hostname,
 		Ts:    time.Now().UTC().String(),
 		Prime: *getPrime(maxNum),
+		Envs:  os.Environ(),
 	})
 
 }

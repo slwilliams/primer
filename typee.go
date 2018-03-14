@@ -8,6 +8,7 @@ type ServiceResponse struct {
 	Prime PrimeObject `json:"prime"`
 	Host  string      `json:"host"`
 	Ts    string      `json:"ts"`
+	Envs  []string    `json:"envs"`
 }
 
 // PrimeObject holds prime response context
